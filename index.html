@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joe Ranft - UX &amp; Product Strategy</title>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LBZ86P8NBD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LBZ86P8NBD');
+</script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCUa2WZw3FfqFftSVgGhB00KgGWrzWq7zU",
+    authDomain: "joe-ranft-website.firebaseapp.com",
+    projectId: "joe-ranft-website",
+    storageBucket: "joe-ranft-website.firebasestorage.app",
+    messagingSenderId: "985146807312",
+    appId: "1:985146807312:web:44eb7c3bdac1786c03a695",
+    measurementId: "G-E0JCLWMQQ1"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <style>
+    
+    .top-bar {
+    background-color: #2C7AAC;
+    padding: 10px 40px;
+    text-align: right;
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+}
+ 
+.top-bar a {
+    color: white;
+    text-decoration: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    margin-left: 20px;
+}
+
+.top-bar a:hover {
+    text-decoration: underline;
+}
+
+.book-appointment {
+    background-color: white;
+    color: #2C7AAC !important;
+    padding: 5px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.book-appointment:hover {
+    background-color: #f0f0f0;
+    text-decoration: none !important;
+}
+
+        :root {
+            --primary-color: #EE4E1C;
+            --background-color: #f5f5f1;
+            --text-color: #333333;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 300;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--primary-color);
+        }
+
+        .page-wrapper {
+            background-color: var(--background-color);
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            padding: 0 40px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 40px;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+h2 {
+    font-size: 2rem;
+    color: #2C7AAC;  /* Changed from var(--primary-color) */
+    margin: 3rem 0 1.5rem;
+}
+
+        h3 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin: 2rem 0 1rem;
+        }
+
+        h4 {
+            font-size: 1.2rem;
+            margin: 1.5rem 0 0.75rem;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+        }
+
+        section {
+				padding: 1rem 40px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        li:before {
+            content: "•";
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+        }
+
+        .intro {
+            font-size: 1.25rem;
+            max-width: 100%;
+        }
+
+        .contact {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 40px;
+            margin-top: 1rem;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        .contact a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid white;
+        }
+
+        .contact a:hover {
+            border-bottom-width: 2px;
+        }
+
+        @media (max-width: 840px) {
+            .page-wrapper {
+                margin: 0;
+            }
+
+            .container {
+                padding: 0 20px;
+            }
+
+            section {
+				padding: 1rem 40px;
+            }
+
+            header {
+                padding: 1rem 20px;
+            }
+
+            .contact {
+                padding: 1rem 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.75rem;
+            }
+            
+            h3 {
+                font-size: 1.25rem;
+            }
+            
+            .intro {
+                font-size: 1.1rem;
+            }
+        }
+.logo {
+    display: block;
+    margin: 0 auto 2rem auto;  /* Centers the logo and adds space below */
+    border: 4px solid white;
+    width: 200px;  /* Adjust this value based on your logo size */
+    height: auto;
+    margin-top: 1rem;
+}
+    </style>
+
+</head>
+<body>
+<div class="top-bar">
+    <a href="https://www.linkedin.com/in/joeranft">LinkedIn</a>
+    <a href="mailto:jranft@gmail.com">Email</a>
+    <a href="https://fantastical.app/jranft/meet-with-joe-ranft" target="_blank" class="book-appointment">Book an Appointment</a>
+</div>
+
+    <div class="page-wrapper">
+    <header>
+    <img src="jr-logo.svg" alt="Joe Ranft Logo" class="logo" alt="Joe Ranft | UX & Product Thinker">
+    </header>
+
+        <main>
+            <section>
+                <p class="intro">I help organizations build the right products for their customers through proven user research, UX strategy, and product leadership. My work is grounded in Design Thinking and Continuous Product Discovery - methodologies I've implemented at companies ranging from early-stage startups to Fortune 500 enterprises.</p>
+            </section>
+
+            <section>
+                <h2>My Approach</h2>
+                
+                <h3>Design Thinking</h3>
+                <p>Design Thinking isn't just a buzzword - it's a proven framework for innovation that I've learned at Stanford d.School and started to use at Fidelity Investments, after which it's been a key set of methods for me. This human-centered approach ensures we're solving the right problems through:</p>
+                <ul>
+                    <li>Deep user empathy</li>
+                    <li>Rapid prototyping and testing</li>
+                    <li>Cross-functional collaboration</li>
+                    <li>Iterative improvement</li>
+                </ul>
+
+                <h3>Continuous Product Discovery</h3>
+                <p>Success comes from ongoing learning and validation, not one-time research projects. I help teams establish sustainable discovery practices through:</p>
+                <ul>
+                    <li>Regular customer interviews</li>
+                    <li>Continuous hypothesis testing</li>
+                    <li>Data-informed decision making</li>
+                    <li>Risk reduction through rapid learning cycles</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Services</h2>
+
+                <h3>User Research & Customer Understanding</h3>
+                <ul>
+                    <li>In-depth user interviews and analysis</li>
+                    <li>Usability testing and research synthesis</li>
+                    <li>Customer journey mapping</li>
+                    <li>Behavioral insights and analytics</li>
+                    <li>Research program development</li>
+                </ul>
+
+                <h3>UX Strategy & Direction</h3>
+                <ul>
+                    <li>Experience assessment and improvement</li>
+                    <li>Design system development</li>
+                    <li>Team structure and processes</li>
+                    <li>Design thinking implementation</li>
+                    <li>Cross-functional alignment</li>
+                </ul>
+
+                <h3>Product Strategy & Leadership</h3>
+                <ul>
+                    <li>Vision and roadmap development</li>
+                    <li>Digital transformation guidance</li>
+                    <li>Team coaching and development</li>
+                    <li>Process optimization</li>
+                    <li>Stakeholder management</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Engagement Types</h2>
+
+                <h3>Introductory Packages</h3>
+                <h4>Initial Q&A Sessions</h4>
+                <p>Perfect for getting quick perspective on:</p>
+                <ul>
+                    <li>Current discovery practices</li>
+                    <li>Research opportunities</li>
+                    <li>Team structure and process</li>
+                    <li>Immediate UX challenges</li>
+                    <li>UX and Product Expert Reviews</li>
+                </ul>
+
+                <h4>Full Day / Half Day Workshops</h4>
+                <p>Go deep on:</p>
+                <ul>
+                    <li>Design Thinking Implementation</li>
+                    <li>Discovery Practice Development</li>
+                    <li>Research Program Setup</li>
+                    <li>User Interview Training</li>
+                    <li>Product Strategy & Vision Development</li>
+                </ul>
+
+                <h3>Ongoing Engagements</h3>
+                <h4>Fractional Leadership</h4>
+                <p>For organizations not ready for a full-time UX or Product leader:</p>
+                <ul>
+                    <li>Regular strategic guidance</li>
+                    <li>Team oversight and development</li>
+                    <li>Process implementation</li>
+                    <li>Stakeholder management</li>
+                    <li>Culture development</li>
+                </ul>
+
+                <h4>Project-Based Work</h4>
+                <p>Defined scope and deliverables for:</p>
+                <ul>
+                    <li>User research initiatives</li>
+                    <li>Experience assessment</li>
+                    <li>Strategy development</li>
+                    <li>Process implementation</li>
+                    <li>Team structure recommendations</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Prior Experience</h2>
+
+                <h3>Enterprise Impact</h3>
+                <h4>Fidelity Investments - VP, User Experience & Design</h4>
+                <ul>
+                    <li>Led 30+ person design team for Fidelity.com</li>
+                    <li>Directed Active Trader Pro platform development</li>
+                    <li>Transformed NetBenefits workplace retirement experience</li>
+                    <li>Established enterprise-wide Design Thinking practice</li>
+                </ul>
+
+                <h3>Digital Transformation</h3>
+                <h4>Nuveen/TIAA</h4>
+                <ul>
+                    <li>Led digital transformation for 3,500-person organization</li>
+                    <li>Created new advisor, institutional, and global client platforms</li>
+                    <li>Developed company-wide design standards</li>
+                    <li>Implemented innovation process and Design Thinking workshops</li>
+                </ul>
+
+                <h3>Startup & Scale-up Success</h3>
+                <h4>Allurion Technologies - VP Product and Design</h4>
+                <ul>
+                    <li>Developed AI coach (Coach Iris)</li>
+                    <li>Scaled patient engagement from 3,000 to 30,000 monthly users</li>
+                    <li>Created revenue-generating Virtual Care Suite</li>
+                    <li>Led cross-platform product development</li>
+                </ul>
+
+                <h4>Cinch Financial - Co-Founder</h4>
+                <ul>
+                    <li>Built team from 0 to 30+ employees</li>
+                    <li>Led product strategy through three generations</li>
+                    <li>Developed innovative financial product scoring system</li>
+                </ul>
+
+                <h3>Selected Consulting Projects</h3>
+                <ul>
+                    <li>TripAdvisor: Designed first version of SniqueAway</li>
+                    <li>AthenaHealth: EMR product improvement, established UX capability</li>
+                    <li>Weather.com, Cars.com, Motley Fool: Product optimization</li>
+                    <li>Various startups: Product strategy and UX direction</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Results That Matter</h2>
+                <ul>
+                    <li>Transformed enterprise financial platforms through design thinking practices</li>
+                    <li>Scaled digital health platform through continuous discovery and testing</li>
+                    <li>Built and mentored high-performing product and design teams</li>
+                    <li>Established sustainable research and discovery practices</li>
+                    <li>Created new revenue streams through user-centered design</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="contact">
+            <h2>Contact</h2>
+            <p>Based in Brookline, MA</p>
+            <p><a href="mailto:jranft@gmail.com">Email</a></p>
+            <p><a href="https://www.linkedin.com/in/joeranft">LinkedIn</a></p>
+            <p><a href="https://fantastical.app/jranft/meet-with-joe-ranft" target="_blank">Book an Appointment</a></p>
+        </footer>
+    </div>
+</body>
+</html>
